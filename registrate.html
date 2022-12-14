@@ -1,0 +1,78 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Importando estilos -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <title> JALEAD STUDIO | CARTELERA </title> <!-- Esto es el título de la pagina -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@main/css/iconoir.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<title>Grid2</title>
+<head>
+<body class = "grid-container">
+  <!--Menu a desplegar de la pantalla completa-->
+  <header class="header">
+    <div class="btn-menu-icon">
+      <label for="btn-menu" >
+        <svg width="48px" height="48px" stroke-width="3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+          <path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </label>
+      </div>
+      <div class="container-menu-icon" id="navbarResponsive">
+        <nav class="navbar-menu">
+          <a href="sobre_nosotros.html">Sobre Nosotros</a>
+          <a href="cartelera.html">Cartelera</a>
+          <a href="">Promociones</a>
+          <a href="">Próximos estrenos</a>
+          <a href="">Inicio de sesión</a>
+        </nav>
+        
+      </div>
+      <a href="">
+        <img class="logo" src="static/img/Logo.png" alt="Logo Equipo" width="100" height="100"> 
+      </a><!-- Insertando imagen -->
+      <p class="p-logo">JALEAD STUDIO </p>
+      <hr>
+      
+    </header>
+    <!--Menu a desplegar para cualquier panatalla minimizada-->
+    <input type="checkbox" id="btn-menu" >
+      <div class="container-menu">
+        <div class="cont-menu" >
+          <nav>
+            <a href="sobre_nosotros.html">Sobre Nosotros</a>
+            <a href="cartelera.html">Cartelera</a>
+            <a href="">Promociones</a>
+            <a href="">Próximos estrenos</a>
+            <a href="">Inicio de sesión</a>
+          </nav>
+          <label for="btn-menu">
+            <svg width="34px" height="34px" stroke-width="3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+            <path d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </label>
+        </div>
+      </div>
+<aside class="sidebar">
+  <div class="carouselAnuncios" >
+    <label class="btn_izq" id="retroceder">
+      <i class="material-icons" style="font-size:36px">keyboard_arrow_left</i>
+    </label>
+    <label class="btn_der" id="avanzar">
+      <i class="material-icons" style="font-size:36px">keyboard_arrow_right</i>
+    </label>
+  </div>
+</aside>
+<article class="main">Main</article>
+<footer class="footer">
+  <div class="container-permisos" >
+    <small>©Todos los derechos reservados JALEA STUDIO. Esta página puede ser reproducida con fines
+      no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica.
+  </small>
+  </div>
+</footer>
+</body>
+<!-- Importando eventos js -->
+<script src="static/js/anuncios.js"></script>
+<script src="static/js/carousel.js"></script>
+</html>
