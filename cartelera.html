@@ -1,179 +1,92 @@
-<!--Primera página web
-  Desarrollado por: Esparza Fuentes Jorge Luis, Martínez Juárez Abigail,  Meztli, Mendoza de la Vega Dulce Elizabeth y  Ramirez Toxqui Adriana
--->
-<!DOCTYPE html>
-<html>
-  <head>
-    <title> JALEAD STUDIO | CARTELERA </title> <!-- Esto es el título de la pagina -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@main/css/iconoir.css">
-
-    <link rel="stylesheet" href="static/css/style.css">
-  </head>
-  <body>
-    
-    <header class="header">
-      <div class="btn-menu-icon">
-        <label for="btn-menu" >
-          <svg width="48px" height="48px" stroke-width="3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
-            <path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Importando estilos -->
+  <link rel="stylesheet" href="static/css/style-base.css">
+  <title> JALEAD STUDIO | Registra pelicula </title> <!-- Esto es el título de la pagina -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@main/css/iconoir.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<title>Grid2</title>
+<head>
+<body class = "grid-container">
+  <!--Menu a desplegar de la pantalla completa-->
+  <header class="header">
+    <div class="btn-menu-icon">
+      <label for="btn-menu" >
+        <svg width="48px" height="48px" stroke-width="3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+          <path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
         </label>
       </div>
       <div class="container-menu-icon" id="navbarResponsive">
         <nav class="navbar-menu">
           <a href="sobre_nosotros.html">Sobre Nosotros</a>
-            <a href="cartelera.html">Cartelera</a>
-            <a href="">Promociones</a>
-            <a href="">Próximos estrenos</a>
-            <a href="">Inicio de sesión</a>
+          <a href="cartelera.html">Cartelera</a>
+          <a href="registra-pelicula.html">Registrar pelicula</a>
+          <a href="registrate.html">Registrate</a>
+          <a href="inicio-sesion.html">Inicio de sesión</a>
         </nav>
-            
+        
       </div>
       <a href="">
         <img class="logo" src="static/img/Logo.png" alt="Logo Equipo" width="100" height="100"> 
       </a><!-- Insertando imagen -->
       <p class="p-logo">JALEAD STUDIO </p>
       <hr>
+      
     </header>
+    <!--Menu a desplegar para cualquier panatalla minimizada-->
     <input type="checkbox" id="btn-menu" >
-    <div class="container-menu">
-      <div class="cont-menu" >
-        <nav>
-          <a href="sobre_nosotros.html">Sobre Nosotros</a>
-          <a href="cartelera.html">Cartelera</a>
-          <a href="">Promociones</a>
-          <a href="">Próximos estrenos</a>
-          <a href="">Inicio de sesión</a>
-        </nav>
-        <label for="btn-menu">
-          <svg width="34px" height="34px" stroke-width="3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
-          <path d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-        </label>
-      </div>
-    </div>
-    <br>
-    <h1 style="align-items: center;">Películas en Cartelera </h1> <!-- Encabezado Grande-->
-    <br>
-    <hr> 
-    <div >
-      <h2> Martes 29 de Agosto </h2> <!-- Encabezado Mediano-->  
-    </div>
-    <hr>
-
-    <div id="carouselExampleCaptions" class="carousel" data-bs-ride="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner" id="carousel-inner" style=" padding: 0px 7%;">
-        <div class="carousel-item activate" id="carousel-item_1" style=" display: none;">
-
+      <div class="container-menu">
+        <div class="cont-menu" >
+          <nav>
+            <a href="sobre_nosotros.html">Sobre Nosotros</a>
+            <a href="cartelera.html">Cartelera</a>
+            <a href="registra-pelicula.html">Registrar pelicula</a>
+            <a href="registrate.html">Registrate</a>
+            <a href="inicio-sesion.html">Inicio de sesión</a>
+          </nav>
+          <label for="btn-menu">
+            <svg width="34px" height="34px" stroke-width="3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+            <path d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </label>
         </div>
-  
-        <div class="carousel-item" id="carousel-item_2"  style=" display: none;">
-          
-          </div>
-        </div>
-
-        <div class="carousel-item" id="carousel-item_3" style="display: none;" >
-          <div class="movie">
-              <h3> Dragon Ball SUPER: Super Hero </h3>
-              <a href="https://www.youtube.com/watch?v=0lXtaS0JBhc" target="_blank">
-                <img class="img" src="static/img/dragonball.jpg" alt="Pelicula Dragon ball" width="83" height="119">
-              </a>
-              <div class="text-movie">
-                <p>
-                  <br>
-                  Dragon Ball SUPER: Super Hero (Japón, 2022) <br>
-                  Sinopsis: Son Goku destruyó en su momento a la Patrulla Roja. Ahora, ciertos  individuos han decidido continuar 
-                  con su legado y han creado a los androides definitivos: Gamma 1 y Gamma 2. Estos dos androides se autoproclaman 
-                  "superhéroes" y deciden atacar a Piccolo y a Gohan. ¿Cuál es el objetivo de la nueva Patrulla Roja? Ante un peligro 
-                  inminente, ¡llega el momento del despertar del Superhéroe!<br>
-                  Créditos y reparto: <br>
-                  Actores: Eduardo Garza, Luis Manuel Ávila, Mario Castañeda, Carlos Segundo, René García <br>
-                  Directores: Tetsuro Kodama <br>
-                </p>
-                
-              <a href=""><input class="btn-horarios" type="button" value="Horarios" onclick="msg()"></a>
-              </div>
-          </div>
-        </div>
-        <label class="carousel-control-prev"  id="retroceder" >
-          <svg width="103px" height="103px" stroke-width="3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
-          <path d="M15 6l-6 6 6 6" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-        </label>
-        <label class="carousel-control-next" role="button" id="avanzar">
-            <svg width="103px" height="103px" stroke-width="3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
-            <path d="M9 6l6 6-6 6" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-        </label>
       </div>
-      <br><br>
 
-    </div>
+<article class="main">
 
-    <div class="movie" >
-      <h3> Bestia </h3> <!-- Encabezado pequeño -->
-      <a href="https://www.youtube.com/watch?v=rM0aUSHSTf0" target="_blank">
-        <img class="img" src="static/img/bestia.jpg" alt="Portada pelicula Bestia" width="83" height="119">
-      </a>
-      <div class="text-movie">
-        <br>
-        <p> Beast (Estados Unidos, 2022) <br>
-          Clasificación: B, 93 min, Aventura, Drama, Thriller <br>
-          Sinopsis: Un padre y sus dos hijas adolescentes se ven perseguidos por un enorme león rebelde que intenta demostrar 
-          que la sabana solo tiene un depredador ápice. <br> Actores: Idris Elba, Iyana Halley, Leah Sava Jeffries, Sharlto Copley  
-        </p>
-        <a href=""><input type="button" value="Horarios" ></a>
-      </div>
-    </div>
-
-    <div class="movie">
-      <h3>DC Liga de Súpermascotas </h3>
-      <a href="https://www.youtube.com/watch?v=l17xRHxqYMY" target="_blank">
-        <img class="img" src="static/img/superMascotas.jpg" alt="Pelicula super mascostas " width="83" height="119">
-      </a>
-      <div class="text-movie">
-        <p> <!-- Etiqueta de inicio de parrafo --> 
-          <br>
-          DC League of Super Pets (Estados Unidos, 2022) <br> Clasificación: A, 106 min, Animación, Infantil <br> <!-- br, es un salto de linea -->
-          Sinopsis: En “DC Liga de supermascotas”, Krypto el Superperro y Superman son amigos inseparables que 
-          comparten los mismos superpoderes y luchan juntos contra el crimen en Metrópolis. Cuando Superman y el 
-          resto de la Liga de la Justicia son secuestrados, Krypto debe convencer a un variopinto grupo de un albergue
-          –Ace el sabueso, PB la cerdita barrigona, Merton la tortuga y Chip la ardilla– de dominar sus nuevos poderes 
-          y ayudarlo a rescatar a los superhéroes.
-        </p> <!-- Etiqueta de fin de parrafo -->
-        <a href=""><input type="button" value="Horarios" onclick="msg()"></a>
-      </div>
-      
-
-      
-    <div class="container">
-      <br>
-      <div class="container-permisos" >
-        <small>©Todos los derechos reservados JALEA STUDIO. Esta página puede ser reproducida con fines
-          no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica.
-      </small>
-      </div>
-    </div>
-
+</article>
+<footer class="footer">
+  <div class="container-permisos" >
+    <small>©Todos los derechos reservados JALEA STUDIO. Esta página puede ser reproducida con fines
+      no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica.
+  </small>
+  </div>
+</footer>
+</body>
 <style>
+  label{
+    font-weight: bold;
+    font-size: 20px;
+    
+    color: rgb(67, 67, 67);
+  }
+  li{
+    list-style: none;
+    margin: 0.5%;
+  }
+  p{
+    font-size: 16px;
+    margin: 0.5%;
+    color: rgb(105, 104, 104);
+  }
   h1{
-    text-align: center;
-    font-size: 60px;
-    color: #2b3031;
-  }
-  h2{
-    text-align:right;
-    font-size: 30px;
-    color: #373c3d;
-  }
-  h3{
-    text-align:center;
-    font-size: 35px;
-    color: #373b3b;
+    color: rgb(59, 58, 58);
+    font-weight: bold;
+    font-size: 28px;
   }
 
 
 </style>
-  </body>
 </html>
