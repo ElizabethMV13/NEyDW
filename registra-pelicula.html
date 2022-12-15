@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Importando estilos -->
   <link rel="stylesheet" href="static/css/style.css">
-  <title> JALEAD STUDIO | CARTELERA </title> <!-- Esto es el título de la pagina -->
+  <title> JALEAD STUDIO | Registra pelicula </title> <!-- Esto es el título de la pagina -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@main/css/iconoir.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <title>Grid2</title>
@@ -63,7 +63,82 @@
     </label>
   </div>
 </aside>
-<article class="main">Main</article>
+<article class="main">
+  <div class="registro-usuario">
+
+    <form action="/my-handling-form-page" method="post">
+
+      <li>
+        <label for="titulo" style="float: left;">Titulo:  </label>
+        <input type="text" id="titulo" name="titulo" style="width:50%;">
+      </li>
+      <li>
+        <label for="anio" style="float: left;">Año de estreno:  </label>
+        <input type="text" id="anio" name="anio" style="width:50%;">
+        
+
+      </li>
+      <li>
+        <label for="pais" style="float: left;">País de origen:</label>
+        <input type="text" id="pais" name="pais" style="width:50%;">
+        
+      </li>
+      <li>
+        <label for="directores" style="float: left;">Director(es):</label>
+        <input type="text" id="directores" name="directores" style="width:50%;">
+        
+      </li>
+      <label for="edad" style="float: left; padding: 0px 80% 0px 3% ; ">Genero:</label>
+      <li>
+        <label for="aventura">Aventura</label>
+        <input type="checkbox" value="aventura">
+        <label for="edad" style="padding: 0px 0px 0px 5% ; ">Terror</label>
+        <input type="checkbox" value="terror">
+        <label for="edad" style="padding: 0px 0px 0px 5% ; ">Drama</label>
+        <input type="checkbox" value="drama">
+        <label for="edad" style="padding: 0px 0px 0px 5% ; ">Thriller</label>
+        <input type="checkbox" value="thriller">
+        <label for="familiares" style="padding: 0px 0px 0px 5% ; ">Familiares</label>
+        <input type="checkbox" value="familiares">
+        <label for="accion" style="padding: 0px 0px 0px 5% ; ">Accion</label>
+        <input type="checkbox" value="accion">
+        <label for="drama" style="padding: 0px 0px 0px 5% ; ">Drama</label>
+        <input type="checkbox" value="drama">
+        <label for="comedia" style="padding: 0px 0px 0px 5% ; ">Comedia</label>
+        <input type="checkbox" value="comedia">
+      </li>
+      <li>
+        <label for="duracion" style="float: left;">Duración:</label>
+        <input type="number" id="duracion" name="duracion">
+      </li>
+      <li>
+        <label for="sinopsis" style="float: left;">Sinopsis:</label>
+        <textarea id="sinopsis" name="sinopsis"></textarea>
+      </li>
+      <li>
+        
+        <label for=" thrialler" style="float: left;">Thrialler:</label>
+        <input type="text" id=" thrialler" name=" thrialler">
+
+      </li>
+      <li>
+        <label for="clasificacion" style="float: left;">Clasificación:</label>
+        <select name="clasificacion" id="clasificacion">
+          <option value="G">G</option>
+          <option value="PG">PG</option>
+          <option value="14A">14A</option>
+          <option value="18A">18A</option>
+          <option value="R">R</option>
+          <option value="A">A</option>
+        </select>
+      </li>
+    </form>
+    <div style="padding:5% 8px; ">
+      <button type="submit" style=" font-weight: bold;padding:2% 4%; border: 0px; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76);">Registrarse</button>
+    </div>
+    
+  </div>
+</article>
 <footer class="footer">
   <div class="container-permisos" >
     <small>©Todos los derechos reservados JALEA STUDIO. Esta página puede ser reproducida con fines
