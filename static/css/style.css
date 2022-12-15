@@ -300,10 +300,10 @@ body { min-height : 100%;  }
     display : grid; 
     gap: 15px;
     grid-template-columns: 200px auto;
-    grid-template-rows: 100px 50px auto 10px; 
+    grid-template-rows: 100px 5px auto 10px; 
     grid-template-areas: 
      "header header"   
-     "navbar navbar" "sidebar main"  
+     "navbar navbar""sidebar main"  
      "footer footer"
     }  
 
@@ -315,13 +315,17 @@ body { min-height : 100%;  }
     
          grid-template : 
           "header header header" 100px   
-          "main    sidebar"    auto 
+          "main sidebar"  auto 
           "footer footer footer" 100px  /    /* ancho 3 cols */
           200px auto  200px; 
          }  
 }
 
-.header { grid-area: header; background-color: blue;  }
+.header { 
+    grid-area: header; 
+    background-color: blue; 
+    height: 135%;
+ }
 /*.navbar { grid-area: navbar; background-color : #afd6af; }*/
 .sidebar{ 
     grid-area: sidebar; 
@@ -335,3 +339,15 @@ body { min-height : 100%;  }
     position: absolute;
     width: 100%;
 }
+
+.registro-usuario{
+    border-radius: 8%;
+    padding: 3%;
+    border: #cfd3d3;
+    border-style: solid;
+    background-color: #e1e6e6;
+    height: 85%;
+    margin: 2.5%;
+}
+
+/*<textarea id="text" name="user"></textarea>*/
