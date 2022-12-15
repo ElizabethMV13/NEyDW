@@ -354,3 +354,9 @@ body { min-height : 100%; }
     height: 80%;
     margin: 2.5%;
 }
+
+.integrante-desarrollo{
+    padding: 5%;
+    height: 50%;
+    width: 100%;
+}
