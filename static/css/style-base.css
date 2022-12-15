@@ -187,6 +187,8 @@ p{
 
 /*Maneja el menu desplegable*/
 @media only screen and (max-width: 800px){
+    
+    
 
     .navbar-toggler{
         
@@ -291,8 +293,8 @@ body { min-height : 100%; }
     background-color: rgb(242, 242, 248); 
     display : grid;    
     gap : 10px;
-    grid-template-areas: "header" "navbar" "main"   
-      "sidebar" "footer";   
+    grid-template-areas: "header" "main"   
+      "footer";   
 }
 
 /* Tablet 2 cols */
@@ -304,7 +306,7 @@ body { min-height : 100%; }
     grid-template-rows: 100px 5px auto; 
     grid-template-areas: 
      "header header"   
-     "navbar navbar""sidebar main"  
+     "main main"  
      "footer footer"
     }  
 
@@ -316,7 +318,7 @@ body { min-height : 100%; }
     
          grid-template : 
           "header header header" 100px   
-          "main sidebar"  auto 
+          "main main main"  auto 
           "footer footer footer" 100px  /    /* ancho 3 cols */
           200px auto  200px; 
          }  
@@ -338,18 +340,17 @@ body { min-height : 100%; }
     background-color: #1b3039;
     height: 13%;
     padding: 5px 10%;
-    bottom: -10% !important; /*-40 para cuando la pantalla es de telefono*/
+    bottom: -25% !important; 
     position: absolute;
     width: 100%;
 }
 
 .registro-usuario{
     border-radius: 8%;
-    padding: 2.5%;
+    padding: 3%;
     border: #cfd3d3;
     border-style: solid;
     background-color: #e1e6e6;
-    height: 90%;
+    height: 80%;
     margin: 2.5%;
 }
-

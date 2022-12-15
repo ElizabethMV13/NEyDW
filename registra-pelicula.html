@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Importando estilos -->
-  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/style-base.css">
   <title> JALEAD STUDIO | Registra pelicula </title> <!-- Esto es el título de la pagina -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@main/css/iconoir.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -53,16 +53,7 @@
           </label>
         </div>
       </div>
-<aside class="sidebar">
-  <div class="carouselAnuncios" >
-    <label class="btn_izq" id="retroceder">
-      <i class="material-icons" style="font-size:36px">keyboard_arrow_left</i>
-    </label>
-    <label class="btn_der" id="avanzar">
-      <i class="material-icons" style="font-size:36px">keyboard_arrow_right</i>
-    </label>
-  </div>
-</aside>
+
 <article class="main">
   <div class="registro-usuario">
 
@@ -70,66 +61,66 @@
 
       <li>
         <label for="titulo" style="float: left;">Titulo:  </label>
-        <input type="text" id="titulo" name="titulo" style="width:50%;">
+        <input type="text" id="titulo" name="titulo" style="width:70%;">
       </li>
       <li>
         <label for="anio" style="float: left;">Año de estreno:  </label>
-        <input type="text" id="anio" name="anio" style="width:50%;">
+        <input type="text" id="anio" name="anio" style="width:70%;">
         
 
       </li>
       <li>
         <label for="pais" style="float: left;">País de origen:</label>
-        <input type="text" id="pais" name="pais" style="width:50%;">
+        <input type="text" id="pais" name="pais" style="width:70%;">
         
       </li>
       <li>
         <label for="directores" style="float: left;">Director(es):</label>
-        <input type="text" id="directores" name="directores" style="width:50%;">
+        <input type="text" id="directores" name="directores" style="width:70%;">
         
       </li>
-      <label for="edad" style="float: left; padding: 0px 80% 0px 3% ; ">Genero:</label>
+      <label for="edad" style="float: left; padding: 0px 90% 0px .5% ; ">Genero:</label>
       <li>
-        <label for="aventura">Aventura</label>
+        <label for="aventura" style="padding: 0px 0px 0px 3% ; ">Aventura</label>
         <input type="checkbox" value="aventura">
-        <label for="edad" style="padding: 0px 0px 0px 5% ; ">Terror</label>
+        <label for="edad" style="padding: 0px 0px 0px 3% ; ">Terror</label>
         <input type="checkbox" value="terror">
-        <label for="edad" style="padding: 0px 0px 0px 5% ; ">Drama</label>
+        <label for="edad" style="padding: 0px 0px 0px 3% ; ">Drama</label>
         <input type="checkbox" value="drama">
-        <label for="edad" style="padding: 0px 0px 0px 5% ; ">Thriller</label>
+        <label for="edad" style="padding: 0px 0px 0px 3% ; ">Thriller</label>
         <input type="checkbox" value="thriller">
-        <label for="familiares" style="padding: 0px 0px 0px 5% ; ">Familiares</label>
+        <label for="familiares" style="padding: 0px 0px 0px 3% ; ">Familiares</label>
         <input type="checkbox" value="familiares">
-        <label for="accion" style="padding: 0px 0px 0px 5% ; ">Accion</label>
+        <label for="accion" style="padding: 0px 0px 0px 3% ; ">Accion</label>
         <input type="checkbox" value="accion">
-        <label for="drama" style="padding: 0px 0px 0px 5% ; ">Drama</label>
+        <label for="drama" style="padding: 0px 0px 0px 3% ; ">Drama</label>
         <input type="checkbox" value="drama">
-        <label for="comedia" style="padding: 0px 0px 0px 5% ; ">Comedia</label>
+        <label for="comedia" style="padding: 0px 0px 0px 3% ; ">Comedia</label>
         <input type="checkbox" value="comedia">
       </li>
       <li>
         <label for="duracion" style="float: left;">Duración:</label>
-        <input type="number" id="duracion" name="duracion">
+        <input type="number" id="duracion" name="duracion" style="width:70%;">
       </li>
       <li>
         <label for="sinopsis" style="float: left;">Sinopsis:</label>
-        <textarea id="sinopsis" name="sinopsis"></textarea>
+        <textarea id="sinopsis" name="sinopsis" style="width:70%;"></textarea>
       </li>
       <li>
         
         <label for=" thrialler" style="float: left;">Thrialler:</label>
-        <input type="text" id=" thrialler" name=" thrialler">
+        <input type="text" id=" thrialler" name=" thrialler" style="width:70%;">
 
       </li>
       <li>
         <label for="clasificacion" style="float: left;">Clasificación:</label>
-        <select name="clasificacion" id="clasificacion">
+        <select name="clasificacion" id="clasificacion" style="width:50%;">
+          <option value="A">A</option>
           <option value="G">G</option>
           <option value="PG">PG</option>
           <option value="14A">14A</option>
           <option value="18A">18A</option>
           <option value="R">R</option>
-          <option value="A">A</option>
         </select>
       </li>
     </form>
@@ -147,7 +138,17 @@
   </div>
 </footer>
 </body>
-<!-- Importando eventos js -->
-<script src="static/js/anuncios.js"></script>
-<script src="static/js/carousel.js"></script>
+<style>
+  label{
+    font-weight: bold;
+    font-size: 20px;
+    
+  }
+  li{
+    list-style: none;
+    margin: 0.5%;
+  }
+
+
+</style>
 </html>
