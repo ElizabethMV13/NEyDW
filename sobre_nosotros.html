@@ -23,9 +23,9 @@
         <nav class="navbar-menu">
           <a href="sobre_nosotros.html">Sobre Nosotros</a>
           <a href="cartelera.html">Cartelera</a>
-          <a href="registra-pelicula.html">Registrar pelicula</a>
-          <a href="registrate.html">Registrate</a>
-          <a href="inicio-sesion.html">Inicio de sesión</a>
+          <a href="">Registrate</a>
+          <a href=""></a>
+          <a href="">Iniciar sesión</a>
         </nav>
         
       </div>
@@ -43,9 +43,9 @@
           <nav>
             <a href="sobre_nosotros.html">Sobre Nosotros</a>
             <a href="cartelera.html">Cartelera</a>
-            <a href="registra-pelicula.html">Registrar pelicula</a>
-            <a href="registrate.html">Registrate</a>
-            <a href="inicio-sesion.html">Inicio de sesión</a>
+            <a href="">Promociones</a>
+            <a href="">Próximos estrenos</a>
+            <a href="">Inicio de sesión</a>
           </nav>
           <label for="btn-menu">
             <svg width="34px" height="34px" stroke-width="3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
@@ -63,47 +63,7 @@
     </label>
   </div>
 </aside>
-<article class="main">
-  <div class="registro-usuario">
-
-    <form action="/my-handling-form-page" method="post">
-
-      <li>
-        <label for="name" style="float: left;">Nombre:  </label>
-        <input type="text" id="name" name="user_name" style="width:50%;">
-      </li>
-      <li>
-        <label for="mail" style="float: left;">Correo electrónico:</label>
-        <input type="email" id="mail" name="user_mail"  style="width:60%;">
-      </li>
-      <li>
-        <label for="usuario" style="float: left;">Nombre de usuario:</label>
-        <input type="text" id="user" name="user" style="width:50%;">
-        
-      </li>
-      <label for="edad" style="float: left; padding: 0px 80% 0px 3% ; ">Genero:</label>
-      <li>
-        <label for="edad">Femenino</label>
-        <input type="checkbox">
-        <label for="edad" style="padding: 0px 0px 0px 15% ; ">Masculino</label>
-        <input type="checkbox">
-      </li>
-      <li>
-        <label for="mail" style="float: left;">Tarjeta de credito:</label>
-        <input type="email" id="mail" name="user_mail">
-      </li>
-      <li>
-        <label for="edad" style="float: left;">Edad:</label>
-        <select name="edades" id="edades">
-        </select>
-      </li>
-    </form>
-    <div style="padding:5% 8px; ">
-      <button type="submit" style=" font-weight: bold;padding:2% 4%; border: 0px; background-color: aquamarine; ">Registrarse</button>
-    </div>
-    
-  </div>
-</article>
+<article class="main">Main</article>
 <footer class="footer">
   <div class="container-permisos" >
     <small>©Todos los derechos reservados JALEA STUDIO. Esta página puede ser reproducida con fines
@@ -115,31 +75,4 @@
 <!-- Importando eventos js -->
 <script src="static/js/anuncios.js"></script>
 <script src="static/js/carousel.js"></script>
-<script>
-  var $elemento_select = document.querySelector("#edades")
-  console.log($elemento_select)
-  
-  for (let index = 18; index < 75; index++) {
-    var opt = document.createElement("option");
-    opt.setAttribute("value", `${index}`);
-    opt.textContent = `${index}`;
-
-    $elemento_select.appendChild(opt); 
-    
-  }
-</script>
-
-<style>
-  label{
-    font-weight: bold;
-    font-size: 20px;
-    
-  }
-  li{
-    list-style: none;
-    margin: 2.5%;
-  }
-
-
-</style>
 </html>
