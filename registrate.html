@@ -97,9 +97,17 @@
         <select name="edades" id="edades" style="width:60%;">
         </select>
       </li>
+      <li>
+        <label for="password" style="float: left;">Contraseña:</label>
+        <input type="text" id="password" name="password" style="width:40%;">
+      </li>
+      <li>
+        <label for="password" style="float: left;">Confirma tu contraseña:</label>
+        <input type="text" id="password" name="password" style="width:40%;">
+      </li>
     </form>
     <div style="padding:4% 8px; ">
-      <button type="submit" style=" font-weight: bold;padding:2% 4%; border: 0px; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76);">Registrarse</button>
+      <button type="submit" style=" font-weight: bold;padding:2% 4%; border: 0px; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76); font-size: large;">Registrarse</button>
     </div>
     
   </div>
@@ -122,6 +130,7 @@
   for (let index = 18; index < 75; index++) {
     var opt = document.createElement("option");
     opt.setAttribute("value", `${index}`);
+    
     opt.textContent = `${index}`;
 
     $elemento_select.appendChild(opt); 
@@ -139,8 +148,16 @@
   }
   li{
     list-style: none;
-    margin: 2.5%;
+    margin: 2%;
   }
+  .footer { 
+    background-color: #1b3039;
+    height: 13%;
+    padding: 5px 10%;
+    bottom: -27% !important; /*-40 para cuando la pantalla es de telefono*/
+    position: absolute;
+    width: 100%;
+}
 
 
 </style>

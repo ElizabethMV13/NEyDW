@@ -308,6 +308,11 @@ body { min-height : 100%; }
      "footer footer"
     }  
 
+    .footer { 
+       bottom: -40% !important; /*-40 para cuando la pantalla es de telefono*/
+       position: absolute;
+       width: 100%;
+    }
 }
 
 /* Desktop 3 cols*/
@@ -320,6 +325,11 @@ body { min-height : 100%; }
           "footer footer footer" 100px  /    /* ancho 3 cols */
           200px auto  200px; 
          }  
+         .footer { 
+            bottom: -40% !important; /*-40 para cuando la pantalla es de telefono*/
+            position: absolute;
+            width: 100%;
+        }
 }
 
 .header { 
@@ -334,14 +344,7 @@ body { min-height : 100%; }
 
 }
 .main   { grid-area: main; background-color : #f5f5f5; }
-.footer { 
-    background-color: #1b3039;
-    height: 13%;
-    padding: 5px 10%;
-    bottom: -10% !important; /*-40 para cuando la pantalla es de telefono*/
-    position: absolute;
-    width: 100%;
-}
+
 
 .registro-usuario{
     border-radius: 8%;

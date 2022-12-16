@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Importando estilos -->
   <link rel="stylesheet" href="static/css/style-base.css">
-  <title> JALEAD STUDIO | Registra pelicula </title> <!-- Esto es el título de la pagina -->
+  <title> JALEAD STUDIO | Cartelera </title> <!-- Esto es el título de la pagina -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@main/css/iconoir.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <title>Grid2</title>
@@ -55,7 +55,22 @@
       </div>
 
 <article class="main">
-
+  <div class="carouselAnuncios1" style="position:absolute;" >
+    <label class="btn_izq" id="retroceder">
+      <i class="material-icons" style="font-size:130px">keyboard_arrow_left</i>
+    </label>
+    <label class="btn_der" id="avanzar">
+      <i class="material-icons" style="font-size:130px">keyboard_arrow_right</i>
+    </label>
+  </div>
+  <div class="carouselAnuncios2"   style="position: relative;">
+    <label class="btn_izq" id="retroceder">
+      <i class="material-icons" style="font-size:130px">keyboard_arrow_left</i>
+    </label>
+    <label class="btn_der" id="avanzar">
+      <i class="material-icons" style="font-size:130px">keyboard_arrow_right</i>
+    </label>
+  </div>
 </article>
 <footer class="footer">
   <div class="container-permisos" >
@@ -86,6 +101,14 @@
     font-weight: bold;
     font-size: 28px;
   }
+  .footer { 
+    background-color: #1b3039;
+    height: 13%;
+    padding: 5px 10%;
+    bottom: -27% !important; /*-40 para cuando la pantalla es de telefono*/
+    position: absolute;
+    width: 100%;
+}
 
 
 </style>

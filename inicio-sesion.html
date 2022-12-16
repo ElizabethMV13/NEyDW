@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Importando estilos -->
-  <link rel="stylesheet" href="static/css/style.css">
-  <title> JALEAD STUDIO | CARTELERA </title> <!-- Esto es el título de la pagina -->
+  <link rel="stylesheet" href="static/css/style-base.css">
+  <title> JALEAD STUDIO | Inicio sesión </title> <!-- Esto es el título de la pagina -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@main/css/iconoir.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <title>Grid2</title>
@@ -23,9 +23,9 @@
         <nav class="navbar-menu">
           <a href="sobre_nosotros.html">Sobre Nosotros</a>
           <a href="cartelera.html">Cartelera</a>
-          <a href="">Promociones</a>
-          <a href="">Próximos estrenos</a>
-          <a href="">Inicio de sesión</a>
+          <a href="registra-pelicula.html">Registrar pelicula</a>
+          <a href="registrate.html">Registrate</a>
+          <a href="inicio-sesion.html">Inicio de sesión</a>
         </nav>
         
       </div>
@@ -43,9 +43,9 @@
           <nav>
             <a href="sobre_nosotros.html">Sobre Nosotros</a>
             <a href="cartelera.html">Cartelera</a>
-            <a href="">Promociones</a>
-            <a href="">Próximos estrenos</a>
-            <a href="">Inicio de sesión</a>
+            <a href="registra-pelicula.html">Registrar pelicula</a>
+            <a href="registrate.html">Registrate</a>
+            <a href="inicio-sesion.html">Inicio de sesión</a>
           </nav>
           <label for="btn-menu">
             <svg width="34px" height="34px" stroke-width="3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
@@ -53,17 +53,28 @@
           </label>
         </div>
       </div>
-<aside class="sidebar">
-  <div class="carouselAnuncios" >
-    <label class="btn_izq" id="retroceder">
-      <i class="material-icons" style="font-size:36px">keyboard_arrow_left</i>
-    </label>
-    <label class="btn_der" id="avanzar">
-      <i class="material-icons" style="font-size:36px">keyboard_arrow_right</i>
-    </label>
+
+<article class="main">
+  <div class="div-form">
+
+    <form action="/my-handling-form-page" method="post">
+
+      <li>
+        <label for="user" style="float: left; padding: 0px 100% 0px 0px;">Usuario:  </label><br>
+        <input type="text" id="user" name="user" style="width:50%; height: 35px;">
+      </li><br>
+      <li>
+        <label for="password" style="float: left; padding: 0px 100% 0px 0px;">Contraseña:</label> <br>
+        <input type="text" id="password" name="password" style="width:50%;height: 35px; ">
+      </li>
+     
+    </form>
+    <div style="padding:5% 8px; ">
+      <button type="submit" style=" font-weight: bold;padding:2% 4%; border: 0px; font-size: large; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76);">Registrarse</button>
+    </div>
+    
   </div>
-</aside>
-<article class="main">Main</article>
+</article>
 <footer class="footer">
   <div class="container-permisos" >
     <small>©Todos los derechos reservados JALEA STUDIO. Esta página puede ser reproducida con fines
@@ -72,7 +83,34 @@
   </div>
 </footer>
 </body>
-<!-- Importando eventos js -->
-<script src="static/js/anuncios.js"></script>
-<script src="static/js/carousel.js"></script>
+<style>
+  label{
+    font-weight: bold;
+    font-size: 30px;
+    
+  }
+  li{
+    list-style: none;
+    margin: 3% 5%;
+  }
+
+  .footer { 
+    background-color: #1b3039;
+    height: 13%;
+    padding: 5px 10%;
+    bottom: -45% !important; 
+    position: absolute;
+    width: 100%;
+  }
+  .div-form{
+    border-radius: 8%;
+    padding: 3%;
+    border: #cfd3d3;
+    border-style: solid;
+    background-color: #e1e6e6;
+    height: 90%;
+    margin: 2.5%;
+}
+
+</style>
 </html>

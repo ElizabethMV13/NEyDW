@@ -1,5 +1,3 @@
-
-
 var peliculas = {
     "Beast":{
     anio: "2022",
@@ -89,8 +87,3 @@ var peliculas = {
 
 
   });
-
-
-
-
-
