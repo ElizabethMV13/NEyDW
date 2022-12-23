@@ -187,8 +187,6 @@ p{
 
 /*Maneja el menu desplegable*/
 @media only screen and (max-width: 800px){
-    
-    
 
     .navbar-toggler{
         
@@ -305,11 +303,16 @@ body { min-height : 100%; }
     grid-template-columns: 200px auto;
     grid-template-rows: 100px 5px auto; 
     grid-template-areas: 
-     "header header"   
+     "header header"  
      "main main"  
      "footer footer"
     }  
 
+    .footer { 
+       bottom: -40% !important; /*-40 para cuando la pantalla es de telefono*/
+       position: absolute;
+       width: 100%;
+    }
 }
 
 /* Desktop 3 cols*/
@@ -322,6 +325,11 @@ body { min-height : 100%; }
           "footer footer footer" 100px  /    /* ancho 3 cols */
           200px auto  200px; 
          }  
+         .footer { 
+            bottom: -40% !important; /*-40 para cuando la pantalla es de telefono*/
+            position: absolute;
+            width: 100%;
+        }
 }
 
 .header { 
@@ -340,16 +348,11 @@ body { min-height : 100%; }
 
 .registro-usuario{
     border-radius: 8%;
-    padding: 3%;
+    padding: 2.5%;
     border: #cfd3d3;
     border-style: solid;
     background-color: #e1e6e6;
-    height: 80%;
+    height: 90%;
     margin: 2.5%;
 }
 
-.integrante-desarrollo{
-    padding: 5%;
-    height: 50%;
-    width: 100%;
-}
