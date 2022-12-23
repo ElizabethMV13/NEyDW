@@ -152,8 +152,7 @@ var peliculas = {
   }
 
   var $sidebar = document.querySelector(".carouselAnuncios");
-  console.log($sidebar)
-  var img = document.createElement("img");
+
   var count = 1;
   
   //Se recorre lista de elementos
