@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Importando estilos -->
-  <link rel="stylesheet" href="static/css/style-base.css">
-  <title> JALEAD STUDIO | Registra pelicula </title> <!-- Esto es el título de la pagina -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <title> JALEAD STUDIO | Sobre Nosotros </title> <!-- Esto es el título de la pagina -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@main/css/iconoir.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <title>Grid2</title>
 <head>
-<body class = "grid-container">
+<body class = "grid-container-base">
   <!--Menu a desplegar de la pantalla completa-->
   <header class="header">
     <div class="btn-menu-icon">
@@ -19,20 +19,22 @@
           <path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
         </label>
       </div>
-      <div class="container-menu-icon" id="navbarResponsive">
+      <div class="container-menu-icon" id="navbarResponsive" style="width: 70%;">
         <nav class="navbar-menu">
-          <a href="sobre_nosotros.html">Sobre Nosotros</a>
-          <a href="cartelera.html">Cartelera</a>
-          <a href="registra-pelicula.html">Registrar pelicula</a>
-          <a href="registrate.html">Registrate</a>
-          <a href="inicio-sesion.html">Inicio de sesión</a>
+          <a style="font-size: 18px;margin-left: 8px;" href="sobre_nosotros.html">Acerca de </a>
+          <a style="font-size: 18px;" href="cartelera.html">Cartelera</a>
+          <a style="font-size: 18px;" href="registra-pelicula.html">Registrar pelicula</a>
+          <a style="font-size: 18px;" href="registrate.html">Registrate</a>
+          <a style="font-size: 18px;" href="inicio-sesion.html">Inicio de sesión</a>
         </nav>
         
       </div>
-      <a href="">
-        <img class="logo" src="static/img/Logo.png" alt="Logo Equipo" width="100" height="100"> 
-      </a><!-- Insertando imagen -->
-      <p class="p-logo">JALEAD STUDIO </p>
+      <div style="display: flex; margin: 2%; float: left;">
+        <p class="p-logo">JALEAD STUDIO </p>
+        <a href="">
+          <img class="logo" src="static/img/Logo.png" alt="Logo Equipo" > 
+        </a><!-- Insertando imagen -->
+      </div>
       <hr>
       
     </header>
@@ -41,7 +43,7 @@
       <div class="container-menu">
         <div class="cont-menu" >
           <nav>
-            <a href="sobre_nosotros.html">Sobre Nosotros</a>
+            <a href="sobre_nosotros.html">Acerca de</a>
             <a href="cartelera.html">Cartelera</a>
             <a href="registra-pelicula.html">Registrar pelicula</a>
             <a href="registrate.html">Registrate</a>
@@ -54,14 +56,14 @@
         </div>
       </div>
 
-<article class="main">
+<article class="main-base">
 <div class="datos">
-    <h1>Bienvenido a JALEAD STUDIO, esperamos que disfrutes tu experiencia</h1>
+    <h1 >Bienvenido a JALEAD STUDIO, esperamos que disfrutes tu experiencia</h1>
     <h1>Permitenos hablarte un poco de nosotros...</h1>
     <br><br>
     <div class="objetivo" style="float: left; margin: 5px;">
       <label for="" style="float: left;">&nbsp;&nbsp;Objetivo del proyecto: </label><br><br>
-      <p style="float: left;"> &nbsp;&nbsp;&nbsp;&nbsp;Por medio de este proyecto buscamos aplicar cada uno de los conocimientos brindados por el profesor, 
+      <p style="float: left; margin: 1.5%;"> &nbsp;&nbsp;&nbsp;&nbsp;Por medio de este proyecto buscamos aplicar cada uno de los conocimientos brindados por el profesor, 
         con la finalidad de poder ser capaces de desarrolar un sitio funcional que cumpla con los requerimientos
         minimos de una página WEB. <br> </p>
         <p style="float: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Para esto se hizo uso de las siguientes herramientas: </p>
@@ -74,36 +76,38 @@
         </p>
         
     </div>
-    <label for="" style="float: left;">&nbsp;&nbsp;&nbsp;&nbsp;Integrantes del equipo de Desarrollo: </label><br><br>
-    <br><br><br><br><br><br>
-    <br><br>
-    <div>
+    <div style="margin: 2%;">
 
-        <div style="float: right; width: 50%;  margin: 23px 0px 0px 0px;">
-            <div class="integrante-desarrollo">
-                <label for="">Martínez Juárez Abigail Meztli</label>
-                <p>Desarrollador Back End</p>
-                <p>Contacto: abigail.meztli78@gmail.com</p>
-            </div>
-            <div class="integrante-desarrollo">
-                <label for="">Mendoza de la Vega Dulce Elizabeth</label>
-                <p>Desarrollador Full Stack</p>
-                <p>Contacto: elizabeth1509@gmail.com</p>
-            </div>
-        </div>
-        <div style="float: left; width: 50%;">
-    
-            <div class="integrante-desarrollo">
-                <label for="">Esparza Fuentes Jorge Luis</label>
-                <p>Administrador de la Base de Datos</p>
-                <p>Contacto: esparzajorge03@gmail.com</p>
-            </div>
-            <div class="integrante-desarrollo">
-                <label for="">Adriana</label>
-                <p>Desarrollador Back End</p>
-                <p>Contacto: inserta-correo@gmail.com</p>
-            </div>
-        </div>
+      <label for="" style="float: left; margin: 1.5%;">&nbsp;&nbsp;&nbsp;&nbsp;Integrantes del equipo de Desarrollo: </label><br><br>
+  
+      <div>
+  
+          <div style="display: flex; width: 100%;  margin: 23px 0px 0px 0px;">
+              <div style="width: 50%; padding: 1% 3%;" class="integrante-desarrollo">
+                  <label for="">Martínez Juárez Abigail Meztli</label>
+                  <p>Desarrollador Back End</p>
+                  <p>Contacto: abigail.meztli78@gmail.com</p>
+              </div>
+              <div style="width: 50%; padding: 1% 3%;" class="integrante-desarrollo">
+                  <label for="">Mendoza de la Vega Dulce Elizabeth</label>
+                  <p>Desarrollador Full Stack</p>
+                  <p>Contacto: elizabeth1509@gmail.com</p>
+              </div>
+          </div>
+          <div style="display: flex; width: 100%;">
+      
+              <div style="width: 50%; padding: 1% 3%;" class="integrante-desarrollo">
+                  <label for="">Esparza Fuentes Jorge Luis</label>
+                  <p>Administrador de la Base de Datos</p>
+                  <p>Contacto: esparzajorge03@gmail.com</p>
+              </div>
+              <div style="width: 50%; padding: 1% 3%;" class="integrante-desarrollo">
+                  <label for="">Adriana</label>
+                  <p>Desarrollador Back End</p>
+                  <p>Contacto: inserta-correo@gmail.com</p>
+              </div>
+          </div>
+      </div>
     </div>
 </div>
 </article>
@@ -118,7 +122,7 @@
 <style>
   label{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     
     color: rgb(67, 67, 67);
   }
@@ -127,7 +131,7 @@
     margin: 0.5%;
   }
   p{
-    font-size: 16px;
+    font-size: 19px;
     margin: 0.5%;
     color: rgb(105, 104, 104);
   }
@@ -135,6 +139,8 @@
     color: rgb(59, 58, 58);
     font-weight: bold;
     font-size: 28px;
+    margin:10px 8%;
+    text-align: center
   }
   .footer { 
     background-color: #1b3039;
