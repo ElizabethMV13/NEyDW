@@ -35,7 +35,7 @@
           <img class="logo" src="static/img/Logo.png" alt="Logo Equipo" > 
         </a><!-- Insertando imagen -->
       </div>
-      <hr>
+      
       
     </header>
     <!--Menu a desplegar para cualquier panatalla minimizada-->
@@ -62,16 +62,16 @@
     <form action="/my-handling-form-page" method="post">
 
       <li>
-        <label for="user" style="float: left; padding: 0px 100% 0px 0px;">Usuario:  </label><br>
-        <input type="text" id="user" name="user" style="width:50%; height: 35px;">
+        <label for="user" style="float: left; padding: 0px 100% 0px 0px; display: flex;">Usuario:  </label><br>
+        <input type="text" id="user" name="user" style="width:70%; height: 35px; ">
       </li><br>
       <li>
-        <label for="password" style="float: left; padding: 0px 100% 0px 0px;">Contraseña:</label> <br>
-        <input type="text" id="password" name="password" style="width:50%;height: 35px; ">
+        <label for="password" style="float: left; padding: 0px 100% 0px 0px; display: flex;">Contraseña:</label> <br>
+        <input type="text" id="password" name="password" style="width:70%;height: 35px;  ">
       </li>
      
     </form>
-    <div style="padding:5% 8px; ">
+    <div style="padding:5% 8px; text-align: center; ">
       <button type="submit" style=" font-weight: bold;padding:2% 4%; border: 0px; font-size: large; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76);">Registrarse</button>
     </div>
     
@@ -112,6 +112,9 @@
     background-color: #e1e6e6;
     height: 90%;
     margin: 2.5%;
+}
+input{
+  margin: 10px 30%;
 }
 
 </style>

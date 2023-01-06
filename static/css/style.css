@@ -277,16 +277,18 @@ body { min-height : 100%; }
     "footer";   
 }
 
+
 /* Tablet 2 cols */
 @media (min-width: 800px)  {
   .grid-container { 
     display : grid; 
     gap: 15px;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 300px auto;
     grid-template-rows: 130px 5px auto; 
     grid-template-areas: 
-     "header header"   
-     "navbar navbar""sidebar main"  
+     "header header" 
+     "sidebar main"  
+     "sidebar main"  
      "footer footer"
     }  
 
@@ -360,4 +362,19 @@ body { min-height : 100%; }
     margin: 2.5%;
 }
 
+.container-menu-icon{
+   width: 70%;
+}
+.verMas{
+    color: blue;
+}
+.footer-base { 
+    grid-area: footer-base;
+    background-color: #1b3039;
+    height: 13%;
+    padding: 5px 10%;
+    bottom: -27% !important; /*-40 para cuando la pantalla es de telefono*/
+    position: absolute;
+    width: 100%;
+}
 
