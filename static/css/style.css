@@ -377,4 +377,7 @@ body { min-height : 100%; }
     position: absolute;
     width: 100%;
 }
+.carousel-item{
+    margin: 15px;
+}
 

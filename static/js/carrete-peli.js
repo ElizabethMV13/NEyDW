@@ -165,7 +165,6 @@ window.onload = function () {
     var divInterno = document.createElement("div");
     var img = document.createElement("img");
     var a = document.createElement("a");
-    var verMas = document.createElement("a");
    // var p = document.createElement("p");
     var h3 = document.createElement("h3");
 
@@ -187,8 +186,6 @@ window.onload = function () {
     img.setAttribute("class", "img-anuncio");
     img.setAttribute("alt", `'portada_pelicula_'${titulo}`);
     const text = document.createTextNode(titulo);
-    const verMasDiv = document.createTextNode("   Ver más... ");
-    verMas.appendChild(verMasDiv);
    // const resumen = document.createTextNode(datos["sinopsis"]);
     
     //Se da orden deseado a los elementos
@@ -197,7 +194,6 @@ window.onload = function () {
    // p.appendChild(resumen); 
     divInterno.appendChild(a); 
     divInterno.appendChild(h3); 
-    divInterno.appendChild(verMas); 
     //divInterno.appendChild(p); 
     div.appendChild(divInterno); 
     $sidebar.appendChild(div); 
