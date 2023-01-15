@@ -39,8 +39,9 @@ Los clientes, tienen acceso a las pestañas:
  - Registro
  - Acerca de
 
- Los administradores tienen acceso aparte de las mencionadas para clientes a la pestaña:
+ Los administradores tienen acceso a la pestaña:
   - Registro de Películas
+  - Inicio de sesión
 
 
 ### Usuarios Clientes del sistema
