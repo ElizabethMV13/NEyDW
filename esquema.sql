@@ -28,3 +28,12 @@ CREATE TABLE IF NOT EXISTS `pelicula` (
   `peli_clasificacion` varchar(255) NOT NULL,
    PRIMARY KEY (`peli_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO usuarios (nombre, correo, user, genero, tarjeta_c, edad, password, rol) 
+VALUES ('Dulce Elizabeth Mendoza de la Vega', 'elizabeth@admin.com', 'Elizabeth', 'femenino', '123456789', '23', 'e1234', 'administrador');
+INSERT INTO usuarios (nombre, correo, user, genero, tarjeta_c, edad, password, rol) 
+VALUES ('Jorge Luis Esparza Fuentes', 'jorge@admin.com', 'Jorge', 'masculino', '157964823', '23', 'j1234', 'administrador');
+INSERT INTO usuarios (nombre, correo, user, genero, tarjeta_c, edad, password, rol) 
+VALUES ('Adriana Ramirez Toxqui', 'adriana@admin.com', 'Adriana', 'femenino', '876142387', '23', 'ad1234', 'administrador');
+INSERT INTO usuarios (nombre, correo, user, genero, tarjeta_c, edad, password, rol) 
+VALUES ('Abigail Meztli Martinez Juarez', 'abigail@admin.com', 'Abigail', 'femenino', '561472498', '23', 'ab1234', 'administrador');
