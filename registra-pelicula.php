@@ -53,7 +53,7 @@
 		
 	</script>';
 */
-	$sql_cmd = "select * from pelicula" ; # 
+	$sql_cmd = "select * from pelicula order by peli_id desc" ; # 
 
 	echo "selCmd = $sql_cmd <br>";
 	
@@ -64,7 +64,7 @@
 $n = 0;
 $texto = '{ "peliculas":[';
 echo "". $nRows;
-while ($n <= $nRows)
+while ($n <= $nRows-1)
   { 
     
     $fila = mysqli_fetch_array($rslt_set);
@@ -84,7 +84,7 @@ while ($n <= $nRows)
 
     $arr = json_encode($arr);
     
-    if( $n > ($nRows-1) ){
+    if( $n > ($nRows-2) ){
     	$texto = $texto . $arr; 
     }else{
     	$texto = $texto . $arr . ",";

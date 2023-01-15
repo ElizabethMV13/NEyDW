@@ -1,4 +1,4 @@
- <?php 
+<?php 
 //Datos para la onexión a la base de datos
 function obtenerBaseDeDatos(){
     $databasename = "eq5dbpeliculas";
