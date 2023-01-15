@@ -3,6 +3,11 @@ Página web de películas en cartelera.
 Ingreso de nuevas películas para administraores.
 Permite registro de nuevos usuarios.
 
+Proyecto: 
+```bash
+https://github.com/ElizabethMV13/NEyDW/tree/Abigail#readme
+```
+
 ## Instalación
 
 Descomprima la carpeta en un directorio similar al siguiente
@@ -52,7 +57,7 @@ Salvador
 ```
 Contraseña:
 ```bash
-sa1234
+s1234
 ```
 
 Usuario 1
