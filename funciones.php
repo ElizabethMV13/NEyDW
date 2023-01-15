@@ -22,7 +22,7 @@ function userExiste($user){
 function registrarUsuario($user_name, $user_mail, $user, $genero, $tarjeta_credito, $edades, $password){
     $password = hashPassword($password);
     $base_de_datos = obtenerBaseDeDatos();
-    $sentencia = $base_de_datos->prepare("INSERT INTO usuarios(nombre, correo, user, genero, tarjeta_c, edad, password, rol) values(?, ?, ?, ?, ?, ?, ?, 'administrador')");
+    $sentencia = $base_de_datos->prepare("INSERT INTO usuarios(nombre, correo, user, genero, tarjeta_c, edad, password, rol) values(?, ?, ?, ?, ?, ?, ?, 'usuario')");
     return $sentencia->execute([$user_name, $user_mail, $user, $genero, $tarjeta_credito, $edades, $password]);
 }
 
