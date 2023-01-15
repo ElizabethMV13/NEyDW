@@ -1,53 +1,12 @@
-var peliculas = {
-    "Beast":{
-    anio: "2022",
-    pais: "Estados Unidos",
-    clasificacion: "B",
-    duracion: "93",
-    genero: "Aventura, Drama, Thriller",
-    thrialler:"https://www.youtube.com/watch?v=rM0aUSHSTf0",
-    img:"static/img/bestia.jpg",
-    sinopsis: "Un padre y sus dos hijas adolescentes se ven perseguidos por un enorme león rebelde que intenta demostrar que la sabana solo tiene un depredador ápice." 
-    },
-    "Beast0":{
-    anio: "2022",
-    pais: "Estados Unidos",
-    clasificacion: "B",
-    duracion: "93",
-    genero: "Aventura, Drama, Thriller",
-    thriller:"https://www.youtube.com/watch?v=rM0aUSHSTf0",
-    img:"static/img/bestia.jpg",
-    sinopsis: "Un padre y sus dos hijas adolescentes se ven perseguidos por un enorme león rebelde que intenta demostrar que la sabana solo tiene un depredador ápice." 
-    },
-    "Beast1":{
-    anio: "2022",
-    pais: "Estados Unidos",
-    clasificacion: "B",
-    duracion: "93",
-    genero: "Aventura, Drama, Thriller",
-    thriller:"https://www.youtube.com/watch?v=rM0aUSHSTf0",
-    img:"static/img/bestia.jpg",
-    sinopsis: "Un padre y sus dos hijas adolescentes se ven perseguidos por un enorme león rebelde que intenta demostrar que la sabana solo tiene un depredador ápice." 
-    },
-    "Beast2":{
-    anio: "2022",
-    pais: "Estados Unidos",
-    clasificacion: "B",
-    duracion: "93",
-    genero: "Aventura, Drama, Thriller",
-    thriller:"https://www.youtube.com/watch?v=rM0aUSHSTf0",
-    img:"static/img/bestia.jpg",
-    sinopsis: "Un padre y sus dos hijas adolescentes se ven perseguidos por un enorme león rebelde que intenta demostrar que la sabana solo tiene un depredador ápice." 
-    },
-  }
+import peliculas from '../peliculas1.json' assert { type: 'json' };
+let pelis = peliculas.peliculas
   var $sidebar = document.querySelector(".carouselAnuncios");
   
   var count = 1;
     
   //Se recorre lista de elementos
-  var listaTitulos = Object.entries(peliculas).forEach(([titulo,datos]) => {
-    console.log(datos)
-
+  var listaTitulos = pelis.forEach((e,i) => {
+    console.log(e,i)
     //Se declaran elementos a crear
     var div = document.createElement("div");
     var img = document.createElement("img");
@@ -66,19 +25,19 @@ var peliculas = {
  
     //Se insertan atributos y otros elementos necesarios
     div.setAttribute("id", `carousel-item_${count}`);
-    a.setAttribute("href", datos["thriller"]);
+    a.setAttribute("href", e.trailer);
     a.setAttribute("target","_blank");
-    console.log("href", datos["thriller"]);
-    img.setAttribute("src", `${datos["img"]}`);
+    console.log("href",  e.trailer);
+    img.setAttribute("src", `${ e.img}`);
     img.setAttribute("class", "img-anuncio");
-    img.setAttribute("alt", `portada_pelicula_${titulo}`);
+    img.setAttribute("alt", `portada_pelicula_${e.nombre}`);
     verMas.setAttribute("class", "verMas");
-    verMas.setAttribute("href", datos["thriller"]);
-    console.log("href", datos["thriller"]);
+    verMas.setAttribute("href", e.trailer);
+    console.log("href", e.trailer);
     verMas.setAttribute("target","_blank");
-    const text = document.createTextNode(titulo);
-    const resumen = document.createTextNode(datos["sinopsis"]);
-    const verMasDiv = document.createTextNode("   Ver thriller... ");
+    const text = document.createTextNode(e.nombre);
+    const resumen = document.createTextNode(e.sinopsis);
+    const verMasDiv = document.createTextNode("   Ver trailer... ");
     verMas.appendChild(verMasDiv);
     
     //Se da orden deseado a los elementos

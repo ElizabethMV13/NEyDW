@@ -1,0 +1,169 @@
+{
+    "peliculas":[
+        {
+        "nombre":"Beast",
+        "anio": "2022",
+        "pais": "Estados Unidos",
+        "clasificacion": "B",
+        "duracion": "93",
+        "genero": "Aventura, Drama, Thriller",
+        "trailer":"https://www.youtube.com/watch?v=rM0aUSHSTf0",
+        "img":"static/img/bestia.jpg",
+        "sinopsis": "Un padre y sus dos hijas adolescentes se ven perseguidos por un enorme león rebelde que intenta demostrar que la sabana solo tiene un depredador ápice." 
+        },
+        {
+        "nombre":"Avatar 2",
+        "anio": "2022",
+        "pais": "Estados Unidos",
+        "clasificacion": "B",
+        "duracion": "190",
+        "genero": "Aventura, Drama, acción",
+        "trailer":"https://www.youtube.com/watch?v=tlY7hL7Ti_4",
+        "img":"static/img/avatar2.jpeg",
+        "sinopsis": "Jake Sully y Ney'tiri han formado una familia y hacen todo lo posible por permanecer juntos. Sin embargo, deben abandonar su hogar y explorar las regiones de Pandora cuando una antigua amenaza reaparece." 
+        },
+        {
+            "nombre":"Gato con botas",
+            "anio": "2022",
+            "pais": "Estados Unidos",
+            "clasificacion": "A",
+            "duracion": "90",
+            "genero": "Aventura, animada",
+            "trailer":"https://www.youtube.com/watch?v=U5rGblIzIxc",
+            "img":"static/img/gatoBotas2.jpeg",
+            "sinopsis": "Gato con Botas: el último deseo es una película estadounidense de comedia de aventuras animada por computadora producida por DreamWorks Animation y distribuida por Universal Pictures." 
+        },
+        {
+        "nombre":"Megan",
+        "anio": "2022",
+        "pais": "Estados Unidos",
+        "clasificacion": "B",
+        "duracion": "102",
+        "genero": "Terror",
+        "trailer":"https://www.youtube.com/watch?v=VWH9ZSAGb1U",
+        "img":"static/img/megan.jpg",
+        "sinopsis": "Gemma, diseñadora de una muñeca de inteligencia artificial extraordinaria, se convierte en la tutora legal de una niña. Abrumada por la responsabilidad, cede su educación y protección a la muñeca, sin saber que las consecuencias serán terribles." 
+        },
+        {
+        "nombre":"Terrifier 2",
+        "anio": "2022",
+        "pais": "Estados Unidos",
+        "clasificacion": "B",
+        "duracion": "138",
+        "genero": "Terror, Thriller",
+        "trailer":"https://www.youtube.com/watch?v=6KkONLf_ZKU",
+        "img":"static/img/terrifier.jpg",
+        "sinopsis": "El payaso Art resucita en la morgue. Un año después, en la noche de Halloween, el siniestro psicópata vuelve al condado de Miles para atacar a unos hermanos adolescentes cuyo difunto padre les legó un libro con bocetos premonitorios sobre Art." 
+        },
+        {
+            "nombre":"Beast",
+            "anio": "2022",
+            "pais": "Estados Unidos",
+            "clasificacion": "B",
+            "duracion": "93",
+            "genero": "Aventura, Drama, Thriller",
+            "trailer":"https://www.youtube.com/watch?v=rM0aUSHSTf0",
+            "img":"static/img/bestia.jpg",
+            "sinopsis": "Un padre y sus dos hijas adolescentes se ven perseguidos por un enorme león rebelde que intenta demostrar que la sabana solo tiene un depredador ápice." 
+            },
+            {
+            "nombre":"Avatar 2",
+            "anio": "2022",
+            "pais": "Estados Unidos",
+            "clasificacion": "B",
+            "duracion": "190",
+            "genero": "Aventura, Drama, acción",
+            "trailer":"https://www.youtube.com/watch?v=tlY7hL7Ti_4",
+            "img":"static/img/avatar2.jpeg",
+            "sinopsis": "Jake Sully y Ney'tiri han formado una familia y hacen todo lo posible por permanecer juntos. Sin embargo, deben abandonar su hogar y explorar las regiones de Pandora cuando una antigua amenaza reaparece." 
+            },
+            {
+                "nombre":"Gato con botas",
+                "anio": "2022",
+                "pais": "Estados Unidos",
+                "clasificacion": "A",
+                "duracion": "90",
+                "genero": "Aventura, animada",
+                "trailer":"https://www.youtube.com/watch?v=U5rGblIzIxc",
+                "img":"static/img/gatoBotas2.jpeg",
+                "sinopsis": "Gato con Botas: el último deseo es una película estadounidense de comedia de aventuras animada por computadora producida por DreamWorks Animation y distribuida por Universal Pictures." 
+            },
+            {
+            "nombre":"Megan",
+            "anio": "2022",
+            "pais": "Estados Unidos",
+            "clasificacion": "B",
+            "duracion": "102",
+            "genero": "Terror",
+            "trailer":"https://www.youtube.com/watch?v=VWH9ZSAGb1U",
+            "img":"static/img/megan.jpg",
+            "sinopsis": "Gemma, diseñadora de una muñeca de inteligencia artificial extraordinaria, se convierte en la tutora legal de una niña. Abrumada por la responsabilidad, cede su educación y protección a la muñeca, sin saber que las consecuencias serán terribles." 
+            },
+            {
+            "nombre":"Terrifier 2",
+            "anio": "2022",
+            "pais": "Estados Unidos",
+            "clasificacion": "B",
+            "duracion": "138",
+            "genero": "Terror, Thriller",
+            "trailer":"https://www.youtube.com/watch?v=6KkONLf_ZKU",
+            "img":"static/img/terrifier.jpg",
+            "sinopsis": "El payaso Art resucita en la morgue. Un año después, en la noche de Halloween, el siniestro psicópata vuelve al condado de Miles para atacar a unos hermanos adolescentes cuyo difunto padre les legó un libro con bocetos premonitorios sobre Art." 
+            },
+            {
+                "nombre":"Beast",
+                "anio": "2022",
+                "pais": "Estados Unidos",
+                "clasificacion": "B",
+                "duracion": "93",
+                "genero": "Aventura, Drama, Thriller",
+                "trailer":"https://www.youtube.com/watch?v=rM0aUSHSTf0",
+                "img":"static/img/bestia.jpg",
+                "sinopsis": "Un padre y sus dos hijas adolescentes se ven perseguidos por un enorme león rebelde que intenta demostrar que la sabana solo tiene un depredador ápice." 
+                },
+                {
+                "nombre":"Avatar 2",
+                "anio": "2022",
+                "pais": "Estados Unidos",
+                "clasificacion": "B",
+                "duracion": "190",
+                "genero": "Aventura, Drama, acción",
+                "trailer":"https://www.youtube.com/watch?v=tlY7hL7Ti_4",
+                "img":"static/img/avatar2.jpeg",
+                "sinopsis": "Jake Sully y Ney'tiri han formado una familia y hacen todo lo posible por permanecer juntos. Sin embargo, deben abandonar su hogar y explorar las regiones de Pandora cuando una antigua amenaza reaparece." 
+                },
+                {
+                    "nombre":"Gato con botas",
+                    "anio": "2022",
+                    "pais": "Estados Unidos",
+                    "clasificacion": "A",
+                    "duracion": "90",
+                    "genero": "Aventura, animada",
+                    "trailer":"https://www.youtube.com/watch?v=U5rGblIzIxc",
+                    "img":"static/img/gatoBotas2.jpeg",
+                    "sinopsis": "Gato con Botas: el último deseo es una película estadounidense de comedia de aventuras animada por computadora producida por DreamWorks Animation y distribuida por Universal Pictures." 
+                },
+                {
+                "nombre":"Megan",
+                "anio": "2022",
+                "pais": "Estados Unidos",
+                "clasificacion": "B",
+                "duracion": "102",
+                "genero": "Terror",
+                "trailer":"https://www.youtube.com/watch?v=VWH9ZSAGb1U",
+                "img":"static/img/megan.jpg",
+                "sinopsis": "Gemma, diseñadora de una muñeca de inteligencia artificial extraordinaria, se convierte en la tutora legal de una niña. Abrumada por la responsabilidad, cede su educación y protección a la muñeca, sin saber que las consecuencias serán terribles." 
+                },
+                {
+                "nombre":"Terrifier 2",
+                "anio": "2022",
+                "pais": "Estados Unidos",
+                "clasificacion": "B",
+                "duracion": "138",
+                "genero": "Terror, Thriller",
+                "trailer":"https://www.youtube.com/watch?v=6KkONLf_ZKU",
+                "img":"static/img/terrifier.jpg",
+                "sinopsis": "El payaso Art resucita en la morgue. Un año después, en la noche de Halloween, el siniestro psicópata vuelve al condado de Miles para atacar a unos hermanos adolescentes cuyo difunto padre les legó un libro con bocetos premonitorios sobre Art." 
+                }
+    ]
+}
