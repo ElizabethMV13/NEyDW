@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `pelicula` (
   `peli_anio` int(11) NOT NULL,
   `peli_pais` varchar(100) NOT NULL,
   `peli_director` varchar(255) NOT NULL,
-  `peli_imagenes` longblob NOT NULL,
+  `peli_imagenes` text NOT NULL,
   `peli_genero` varchar(100) NOT NULL,
   `peli_duracion` varchar(100) NOT NULL,
   `peli_sinopsis` text NOT NULL,
