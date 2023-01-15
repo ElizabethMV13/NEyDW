@@ -53,7 +53,7 @@
 		
 	</script>';
 */
-	$sql_cmd = "select * from pelicula" ; # 
+	$sql_cmd = "select * from pelicula order by peli_id desc" ; # 
 
 	echo "selCmd = $sql_cmd <br>";
 	
