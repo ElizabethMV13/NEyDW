@@ -19,7 +19,7 @@ Descomprima la carpeta en un directorio similar al siguiente
 
 El resultado debe ser:
 ```bash
-...\AppServ\www\Equipo5
+...\AppServ\www\
 ```
 
 ## Uso
@@ -27,6 +27,7 @@ Usuario de la base de datos
 ```bash
 root
 ```
+
 La contraseña de la base de datos de mysql es:
 ```bash
 12345678
@@ -51,7 +52,7 @@ localhost/Equipo5/inicio-sesion.html
 ### Usuarios administrador del sistema
 Tienen acceso a la pestaña "Registrar Películas" para la actualización de nuevas películas al sistema
 
-Usuario 0
+Usuario 0:
 ```bash
 Salvador
 ```
@@ -60,7 +61,7 @@ Contraseña:
 s1234
 ```
 
-Usuario 1
+Usuario 1:
 ```bash
 Elizabeth
 ```
@@ -69,7 +70,7 @@ Contraseña:
 e1234
 ```
 
-Usuario 2
+Usuario 2:
 ```bash
 Jorge
 ```
@@ -78,7 +79,7 @@ Contraseña:
 j1234
 ```
 
-Usuario 3
+Usuario 3:
 ```bash
 Adriana
 ```
@@ -87,7 +88,7 @@ Contraseña:
 ad1234
 ```
 
-Usuario 4
+Usuario 4:
 ```bash
 Abigail
 ```
