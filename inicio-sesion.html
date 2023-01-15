@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Importando estilos -->
-  <link rel="stylesheet" href="static/css/style-base.css">
+  <link rel="stylesheet" href="static/css/style.css">
   <title> JALEAD STUDIO | Inicio sesión </title> <!-- Esto es el título de la pagina -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@main/css/iconoir.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <title>Grid2</title>
 <head>
-<body class = "grid-container">
+<body class = "grid-container-base">
   <!--Menu a desplegar de la pantalla completa-->
   <header class="header">
     <div class="btn-menu-icon">
@@ -21,19 +21,21 @@
       </div>
       <div class="container-menu-icon" id="navbarResponsive">
         <nav class="navbar-menu">
-          <a href="sobre_nosotros.html">Sobre Nosotros</a>
-          <a href="cartelera.html">Cartelera</a>
-          <a href="registra-pelicula.html">Registrar pelicula</a>
-          <a href="registrate.html">Registrate</a>
-          <a href="inicio-sesion.html">Inicio de sesión</a>
+          <a style="font-size: 18px;margin-left: 8px;" href="sobre_nosotros.html">Acerca de </a>
+          <a style="font-size: 18px;" href="cartelera.html">Cartelera</a>
+          <a style="font-size: 18px;" href="registra-pelicula.html">Registrar pelicula</a>
+          <a style="font-size: 18px;" href="registrate.html">Registrate</a>
+          <a style="font-size: 18px;" href="inicio-sesion.html">Inicio de sesión</a>
         </nav>
         
       </div>
-      <a href="">
-        <img class="logo" src="static/img/Logo.png" alt="Logo Equipo" width="100" height="100"> 
-      </a><!-- Insertando imagen -->
-      <p class="p-logo">JALEAD STUDIO </p>
-      <hr>
+      <div style="display: flex; margin: 2%; ">
+        <p class="p-logo">JALEAD STUDIO </p>
+        <a href="">
+          <img class="logo" src="static/img/Logo.png" alt="Logo Equipo" > 
+        </a><!-- Insertando imagen -->
+      </div>
+      
       
     </header>
     <!--Menu a desplegar para cualquier panatalla minimizada-->
@@ -54,22 +56,22 @@
         </div>
       </div>
 
-<article class="main">
+<article class="main-base">
   <div class="div-form">
 
     <form action="/my-handling-form-page" method="post">
 
       <li>
-        <label for="user" style="float: left; padding: 0px 100% 0px 0px;">Usuario:  </label><br>
-        <input type="text" id="user" name="user" style="width:50%; height: 35px;">
-      </li><br>
+        <label for="user" style="float: left; padding: 0px 100% 0px 0px; display: flex;">Usuario:  </label><br>
+        <input type="text" id="user" name="user" >
+      </li>
       <li>
-        <label for="password" style="float: left; padding: 0px 100% 0px 0px;">Contraseña:</label> <br>
-        <input type="text" id="password" name="password" style="width:50%;height: 35px; ">
+        <label for="password" style="float: left; padding: 0px 100% 0px 0px; display: flex;">Contraseña:</label> <br>
+        <input type="text" id="password" name="password" >
       </li>
      
     </form>
-    <div style="padding:5% 8px; ">
+    <div style="padding:5% 8px; text-align: center; margin: 30px 0px; ">
       <button type="submit" style=" font-weight: bold;padding:2% 4%; border: 0px; font-size: large; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76);">Registrarse</button>
     </div>
     
@@ -86,7 +88,7 @@
 <style>
   label{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 23px;
     
   }
   li{
@@ -98,18 +100,22 @@
     background-color: #1b3039;
     height: 13%;
     padding: 5px 10%;
-    bottom: -45% !important; 
+    bottom: -15% !important; 
     position: absolute;
     width: 100%;
   }
   .div-form{
     border-radius: 8%;
-    padding: 3%;
+    padding:  3%;
     border: #cfd3d3;
     border-style: solid;
     background-color: #e1e6e6;
-    height: 90%;
-    margin: 2.5%;
+    height: 80%;
+    width: 40%;
+    margin:4% 30%;
+}
+input{
+  margin: 8px 30%;width:70%; height: 30px; 
 }
 
 </style>
