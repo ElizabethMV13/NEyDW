@@ -8,20 +8,6 @@ Proyecto:
 https://github.com/ElizabethMV13/NEyDW/tree/Abigail#readme
 ```
 
-## Instalación
-
-Descomprima la carpeta en un directorio similar al siguiente
-
-```bash
-
-...\AppServ\www\
-```
-
-El resultado debe ser:
-```bash
-...\AppServ\www\Equipo5
-```
-
 ## Uso
 Usuario de la base de datos
 ```bash
@@ -97,8 +83,21 @@ Contraseña:
 ```bash
 ab1234
 ```
+## Instalación
 
-## Creación de la BD
+Descomprima la carpeta en un directorio similar al siguiente
+
+```bash
+
+...\AppServ\www\
+```
+
+El resultado debe ser:
+```bash
+...\AppServ\www\Equipo5
+```
+
+### Creación de la BD
 
 Para creación limpia:
 ```bash
