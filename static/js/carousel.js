@@ -27,7 +27,8 @@ window.onload = function () {
   //Función que da movimiento por el btn de avanzar
   $botonAvanzar.onclick = function (e) {
       $margenActual = document.querySelector('.activate');
-      posicionSiguienteAux = 1, posicionActualAux = 0;
+      posicionSiguienteAux = 1;
+      posicionActualAux = 0;
       $elementosCarousel.forEach(elementoCarousel => {
           posicionActualAux++;
           posicionSiguienteAux++;

@@ -46,7 +46,7 @@
             <a href="sobre_nosotros.html">Acerca de</a>
             <a href="cartelera.html">Cartelera</a>
             <a href="registra-pelicula.html">Registrar pelicula</a>
-            <a href="registrate.html">Registrate</a>
+            <a href="registrate.html " style="pointer-events: none;">Registrate</a>
             <a href="inicio-sesion.html">Inicio de sesión</a>
           </nav>
           <label for="btn-menu">
@@ -68,7 +68,7 @@
 <article class="main">
   <div class="registro-usuario">
 
-    <form action="/my-handling-form-page" method="post">
+    <form action="registro.php" method="post">
 
       <li>
         <label for="name" style="float: left;">Nombre:  </label>
@@ -83,16 +83,18 @@
         <input type="text" id="user" name="user" style="width:60%;">
         
       </li>
-      <label for="edad" style="float: left; padding: 0px 80% 0px 3% ; ">Genero:</label>
+      <label for="genero" style="float: left; padding: 0px 80% 0px 3% ; ">Genero:</label>
       <li>
         <label for="f">Femenino</label>
-        <input type="checkbox" value="femenino" >
+        <input name="genero" type="radio" value="femenino" >
         <label for="m" style="padding: 0px 0px 0px 15% ; ">Masculino</label>
-        <input type="checkbox" value="masculino">
+        <input name="genero" type="radio" value="masculino">
+        <label for="m" style="padding: 0px 0px 0px 15% ; ">Prefiero no decirlo</label>
+        <input name="genero" type="radio" value="">
       </li>
       <li>
         <label for="number" style="float: left;">Tarjeta de credito:</label>
-        <input type="number" id="tarjeta-credito" name="user_mail" style="width:60%;">
+        <input type="number" id="tarjeta-credito" name="tarjeta_credito" style="width:60%;">
       </li>
       <li>
         <label for="edad" style="float: left;">Edad:</label>
@@ -105,11 +107,14 @@
       </li>
       <li>
         <label for="password" style="float: left;">Confirma tu contraseña:</label>
-        <input type="text" id="password" name="password" style="width:40%;">
+        <input type="text" id="password" name="confirm_password" style="width:40%;">
       </li>
+      <input type="reset" style=" font-weight: bold;padding:2% 1%; border: 0px; font-size: large; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76);" value="Borrar campos">
+      <input type="submit" style=" font-weight: bold;padding:2% 1%; border: 0px; font-size: large; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76);" value="Registrarse">
     </form>
-    <div style="padding:4% 8px; ">
-      <button type="submit" style=" font-weight: bold;padding:2% 4%; border: 0px; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76); font-size: large;">Registrarse</button>
+    <div style="padding:5% 8px; text-align: center; margin: 30px 0px; ">
+      <small>Click aqui si ya tienes cuenta</small>
+      <a style="font-size: 18px;margin-left: 8px;" href="inicio-sesion.html">Inciar sesión</a>
     </div>
     
   </div>
@@ -117,7 +122,7 @@
 
 </body>
 <!-- Importando eventos js -->
-<script src="static/js/anuncios.js"></script>
+<script type="module" src="static/js/anuncios.js" ></script>
 <script src="static/js/carousel.js"></script>
 <script>
   var $elemento_select = document.querySelector("#edades")

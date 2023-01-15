@@ -20,14 +20,17 @@
         </label>
       </div>
       <div class="container-menu-icon" id="navbarResponsive">
-        <nav class="navbar-menu">
+        <nav style="display: none" class="navbar-menu">
           <a style="font-size: 18px;margin-left: 8px;" href="sobre_nosotros.html">Acerca de </a>
           <a style="font-size: 18px;" href="cartelera.html">Cartelera</a>
           <a style="font-size: 18px;" href="registra-pelicula.html">Registrar pelicula</a>
           <a style="font-size: 18px;" href="registrate.html">Registrate</a>
           <a style="font-size: 18px;" href="inicio-sesion.html">Inicio de sesión</a>
         </nav>
-        
+        <p style="color:#FFFFFF; font-size: 18px;margin-left: 8px;">Esparza Fuentes, Jorge Luis</p>
+        <p style="color:#FFFFFF; font-size: 18px;margin-left: 8px;">Martínez Juárez, Abigail Meztli</p>
+        <p style="color:#FFFFFF; font-size: 18px;margin-left: 8px;">Mendoza de la Vega, Dulce Elizabeth</p>
+        <p style="color:#FFFFFF; font-size: 18px;margin-left: 8px;">Ramírez Toxqui, Adriana</p>
       </div>
       <div style="display: flex; margin: 2%; ">
         <p class="p-logo">JALEAD STUDIO </p>
@@ -43,9 +46,9 @@
       <div class="container-menu">
         <div class="cont-menu" >
           <nav>
-            <a href="sobre_nosotros.html">Sobre Nosotros</a>
-            <a href="cartelera.html">Cartelera</a>
-            <a href="registra-pelicula.html">Registrar pelicula</a>
+            <a style="display: none" href="sobre_nosotros.html">Sobre Nosotros</a>
+            <a style="display: none" href="cartelera.html">Cartelera</a>
+            <a style="display: none" href="registra-pelicula.html">Registrar pelicula</a>
             <a href="registrate.html">Registrate</a>
             <a href="inicio-sesion.html">Inicio de sesión</a>
           </nav>
@@ -59,6 +62,8 @@
 <article class="main-base">
   <div class="div-form">
 
+    <h1 style="text-align: center;">Iniciar sesión</h1>
+
     <form action="login.php" method="post">
 
       <li>
@@ -70,9 +75,13 @@
         <input type="text" id="password" name="password" >
       </li>
       <div style="padding:5% 8px; text-align: center; margin: 30px 0px; ">
-        <button type="submit" style=" font-weight: bold;padding:2% 4%; border: 0px; font-size: large; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76);">Registrarse</button>
+        <button type="submit" style=" font-weight: bold;padding:2% 4%; border: 0px; font-size: large; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76);">Iniciar sesión</button>
       </div>
     </form>
+    <div style="padding:5% 8px; text-align: center; margin: 30px 0px; ">
+      <p>¿Aún no tienes una cuenta?</p>
+      <a style="font-size: 18px;margin-left: 8px;" href="registrate.html">Registrate aquí</a>
+    </div>
     
   </div>
 </article>

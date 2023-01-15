@@ -1,15 +1,30 @@
 CREATE DATABASE IF NOT EXISTS eq5dbpeliculas;
 USE eq5dbpeliculas;
 
-CREATE TABLE IF NOT EXISTS usuarios(
-    id bigint unsigned not null auto_increment,
-    nombre varchar(255) not null,
-    correo varchar(255) not null unique, 
-    user varchar(255) not null unique,
-    genero varchar(10),
-    tarjeta_c varchar(255) not null,
-    edad int not null,
-    password varchar(255) not null,
-    rol varchar(15) not null,
-    primary key(id)
-);
+CREATE TABLE IF NOT EXISTS `usuarios`(
+  `id` bigint unsigned not null auto_increment,
+  `nombre` varchar(255) not null,
+  `correo` varchar(255) not null unique, 
+  `user` varchar(255) not null unique,
+  `genero` varchar(10),
+  `tarjeta_c` varchar(255) not null,
+  `edad` int not null,
+  `password` varchar(255) not null,
+  `rol` varchar(20) not null,
+  primary key(`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `pelicula` (
+  `peli_id` int(100) NOT NULL AUTO_INCREMENT,
+  `peli_titulo` varchar(255) NOT NULL,
+  `peli_anio` int(11) NOT NULL,
+  `peli_pais` varchar(100) NOT NULL,
+  `peli_director` varchar(255) NOT NULL,
+  `peli_imagenes` text NOT NULL,
+  `peli_genero` varchar(100) NOT NULL,
+  `peli_duracion` varchar(100) NOT NULL,
+  `peli_sinopsis` text NOT NULL,
+  `peli_thriller` text NOT NULL,
+  `peli_clasificacion` varchar(255) NOT NULL,
+   PRIMARY KEY (`peli_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

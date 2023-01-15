@@ -8,6 +8,8 @@
   <title> JALEAD STUDIO | Registra pelicula </title> <!-- Esto es el título de la pagina -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@main/css/iconoir.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 <title>Grid2</title>
 <head>
 <body class = "grid-container-base">
@@ -21,11 +23,12 @@
       </div>
       <div class="container-menu-icon" id="navbarResponsive" style="width: 70%;">
         <nav class="navbar-menu">
-          <a style="font-size: 18px;margin-left: 8px;" href="sobre_nosotros.html">Acerca de </a>
-          <a style="font-size: 18px;" href="cartelera.html">Cartelera</a>
-          <a style="font-size: 18px;" href="registra-pelicula.html">Registrar pelicula</a>
-          <a style="font-size: 18px;" href="registrate.html">Registrate</a>
-          <a style="font-size: 18px;" href="inicio-sesion.html">Inicio de sesión</a>
+          <a style="display: none" style="font-size: 18px;margin-left: 8px;" href="sobre_nosotros.html">Acerca de </a>
+          <a style="display: none" style="font-size: 18px;" href="cartelera.html">Cartelera</a>
+          <a style="font-size: 18px;margin-left: 8px;" href="registra-pelicula.html">Registrar pelicula</a>
+          <a style="display: none" style="font-size: 18px;" href="registrate.html">Registrate</a>
+          <a style="display: none" style="font-size: 18px;" href="inicio-sesion.html">Inicio de sesión</a>
+          <a style="font-size: 18px;" href="logout.php">Cerrar sesión</a>
         </nav>
         
       </div>
@@ -43,11 +46,12 @@
       <div class="container-menu">
         <div class="cont-menu" >
           <nav>
-            <a href="sobre_nosotros.html">Acerca de</a>
-            <a href="cartelera.html">Cartelera</a>
+            <a style="display: none" href="sobre_nosotros.html">Acerca de</a>
+            <a style="display: none" href="cartelera.html">Cartelera</a>
             <a href="registra-pelicula.html">Registrar pelicula</a>
-            <a href="registrate.html">Registrate</a>
-            <a href="inicio-sesion.html">Inicio de sesión</a>
+            <a style="display: none" href="registrate.html">Registrate</a>
+            <a style="display: none" href="inicio-sesion.html">Inicio de sesión</a>
+            <a href="logout.php">Cerrar sesión</a>
           </nav>
           <label for="btn-menu">
             <svg width="34px" height="34px" stroke-width="3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
@@ -56,11 +60,12 @@
         </div>
       </div>
 
-
 <article class="main-base">
   <div class="registro-usuario">
 
-    <form action="/my-handling-form-page" method="post">
+    <h1 style="text-align: center;">Registrar pelicula</h1>
+
+    <form action="registra-pelicula.php" method="post">
 
       <li>
         <label for="titulo" style="float: left; display: flex;">Titulo:  </label>
@@ -83,27 +88,27 @@
         
       </li>
       <li>
-        <label for="img" style="float: left;">Poster:</label>
-        <input type="file" id="img" name="img" style="width:60%;">
+        <label for="img" style="float: left;">URL Poster:</label>
+        <input type="text" id="img" name="img" style="width:60%;">
         
       </li>
       <label for="edad" style="float: left; padding: 0px 90% 0px .5% ; ">Genero:</label>
       <li>
         <label for="aventura" style="padding: 0px 0px 0px 3% ; ">Aventura</label>
-        <input type="checkbox" value="aventura">
+        <input type="checkbox" name="check_aventura" value="aventura">
         <label for="edad" style="padding: 0px 0px 0px 3% ; ">Terror</label>
-        <input type="checkbox" value="terror">
+        <input type="checkbox" name="check_terror" value="terror">
         <label for="edad" style="padding: 0px 0px 0px 3% ; ">Drama</label>
-        <input type="checkbox" value="drama">
+        <input type="checkbox" name="check_drama" value="drama">
         <label for="edad" style="padding: 0px 0px 0px 3% ; ">Thriller</label>
-        <input type="checkbox" value="thriller">
+        <input type="checkbox" name="check_thriller"value="thriller">
         <label for="familiares" style="padding: 0px 0px 0px 3% ; ">Familiares</label>
-        <input type="checkbox" value="familiares">
+        <input type="checkbox" name="check_familiares"value="familiares">
         <label for="accion" style="padding: 0px 0px 0px 3% ; ">Accion</label>
-        <input type="checkbox" value="accion">
-        <label for="drama" style="padding: 0px 0px 0px 3% ; ">Drama</label>
+        <input type="checkbox" name="check_accion" value="accion">
+        <label for="drama" name="check_drama" style="padding: 0px 0px 0px 3% ; ">Drama</label>
         <input type="checkbox" value="drama">
-        <label for="comedia" style="padding: 0px 0px 0px 3% ; ">Comedia</label>
+        <label for="comedia" name="check_comedia" style="padding: 0px 0px 0px 3% ; ">Comedia</label>
         <input type="checkbox" value="comedia">
       </li>
       <li>
@@ -116,7 +121,7 @@
       </li>
       <li>
         
-        <label for=" thrialler" style="float: left;">Thrialler:</label>
+        <label for="thrialler" style="float: left;">Thrialler:</label>
         <input type="text" id=" thrialler" name=" thrialler" style="width:60%;">
 
       </li>
@@ -131,10 +136,11 @@
           <option value="R">R</option>
         </select>
       </li>
-    </form>
+    
     <div style=" padding:2.5% 8px; text-align: center;">
-      <button type="submit" style=" font-weight: bold;padding:2% 4%; border: 0px; font-size: large; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76);">Registrarse</button>
+      <button type="submit" style=" font-weight: bold;padding:2% 4%; border: 0px; font-size: large; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76);">Registrar</button>
     </div>
+    </form>
     
   </div>
 </article>
