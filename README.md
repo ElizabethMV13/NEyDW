@@ -19,7 +19,7 @@ Descomprima la carpeta en un directorio similar al siguiente
 
 El resultado debe ser:
 ```bash
-...\AppServ\www\
+...\AppServ\www\Equipo5
 ```
 
 ## Uso
