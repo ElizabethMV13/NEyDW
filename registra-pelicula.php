@@ -1,5 +1,5 @@
 <?php 
-	//  <form name = "registra-peliculaPHP" action="registra-pelicula.php" method="dialog">
+	//  <form name = "registra-peliculaPHP" action="registra-pelicula.php" method="post">
 
 	$p_titulo = $_POST["titulo"];
 	$p_anio = $_POST["anio"];
@@ -49,10 +49,67 @@
 	$rslt = mysqli_query($db_cnx, $sql_cmd);
 	//echo "InsRslt = $rslt " . mysqli_error($db_cnx) ."<br>";
 	
-	echo '<script>alert("Tus datos han sido guardados correctamente");
+/*	echo '<script>alert("Tus datos han sido guardados correctamente");
+		
+	</script>';
+*/
+	$sql_cmd = "select * from pelicula" ; # 
+
+	echo "selCmd = $sql_cmd <br>";
+	
+
+	$rslt_set = mysqli_query($db_cnx, $sql_cmd);
+	$nRows = mysqli_num_rows($rslt_set);
+	
+$n = 0;
+$texto = '{ "peliculas":[';
+echo "". $nRows;
+while ($n <= $nRows)
+  { 
+    
+    $fila = mysqli_fetch_array($rslt_set);
+
+
+    $arr = array(
+        "nombre"=> $fila[1],
+		"anio"=> $fila[2],
+        "pais"=> $fila[3],
+        "clasificacion" => $fila[10],
+        "duracion"=>$fila[7],
+        "genero"=>$fila[6],   
+        "trailer"=> $fila[9], 
+        "director"=> $fila[4],
+        "img"=>$fila[5],
+        "sinopsis"=> $fila[8]);
+
+    $arr = json_encode($arr);
+    
+    if( $n > ($nRows-1) ){
+    	$texto = $texto . $arr; 
+    }else{
+    	$texto = $texto . $arr . ",";
+
+    }
+
+    $n++;
+  }
+
+    $archivo = fopen("peliculas1.json", "w+b");    // Abrir el archivo, creándolo si no existe
+    if( $archivo == false ){
+    	echo '<script>alert("Error al cerrar el archivo");
+		document.location="cartelera.html";
+		</script>';
+    }
+/*    else{
+    	echo '<script>alert("Error al cerrar el archivo");
+		document.location="cartelera.html";
+		</script>';
+    }*/
+    fwrite($archivo,$texto . "]}");
+
+    fclose($archivo);   // Cerrar el archivo    
+
+    echo '<script>alert("Tus datos han sido guardados correctamente");
 		document.location="cartelera.html";
 	</script>';
-
-
-	//Consulta a película
 ?>
