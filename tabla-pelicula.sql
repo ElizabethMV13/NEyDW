@@ -1,3 +1,7 @@
+CREATE DATABASE eq5dbpeliculas;
+
+USE eq5dbpeliculas;
+
 CREATE TABLE IF NOT EXISTS `pelicula` (
   `peli_id` int(100) NOT NULL AUTO_INCREMENT,
   `peli_titulo` varchar(255) NOT NULL,
