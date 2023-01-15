@@ -4,13 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Importando estilos -->
-  <link rel="stylesheet" href="static/css/style-base.css">
+  <link rel="stylesheet" href="static/css/style.css">
   <title> JALEAD STUDIO | Registra pelicula </title> <!-- Esto es el título de la pagina -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@main/css/iconoir.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <title>Grid2</title>
 <head>
-<body class = "grid-container">
+<body class = "grid-container-base">
+  <form name = "registra-peliculaPHP" action="registra-pelicula.php" method="post">
+
   <!--Menu a desplegar de la pantalla completa-->
   <header class="header">
     <div class="btn-menu-icon">
@@ -19,20 +21,22 @@
           <path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
         </label>
       </div>
-      <div class="container-menu-icon" id="navbarResponsive">
+      <div class="container-menu-icon" id="navbarResponsive" style="width: 70%;">
         <nav class="navbar-menu">
-          <a href="sobre_nosotros.html">Sobre Nosotros</a>
-          <a href="cartelera.html">Cartelera</a>
-          <a href="registra-pelicula.html">Registrar pelicula</a>
-          <a href="registrate.html">Registrate</a>
-          <a href="inicio-sesion.html">Inicio de sesión</a>
+          <a style="font-size: 18px;margin-left: 8px;" href="sobre_nosotros.html">Acerca de </a>
+          <a style="font-size: 18px;" href="cartelera.html">Cartelera</a>
+          <a style="font-size: 18px;" href="registra-pelicula.html">Registrar pelicula</a>
+          <a style="font-size: 18px;" href="registrate.html">Registrate</a>
+          <a style="font-size: 18px;" href="inicio-sesion.html">Inicio de sesión</a>
         </nav>
         
       </div>
-      <a href="">
-        <img class="logo" src="static/img/Logo.png" alt="Logo Equipo" width="100" height="100"> 
-      </a><!-- Insertando imagen -->
-      <p class="p-logo">JALEAD STUDIO </p>
+      <div style="display: flex; margin: 2%; float: left;">
+        <p class="p-logo">JALEAD STUDIO </p>
+        <a href="">
+          <img class="logo" src="static/img/Logo.png" alt="Logo Equipo" > 
+        </a><!-- Insertando imagen -->
+      </div>
       <hr>
       
     </header>
@@ -41,7 +45,7 @@
       <div class="container-menu">
         <div class="cont-menu" >
           <nav>
-            <a href="sobre_nosotros.html">Sobre Nosotros</a>
+            <a href="sobre_nosotros.html">Acerca de</a>
             <a href="cartelera.html">Cartelera</a>
             <a href="registra-pelicula.html">Registrar pelicula</a>
             <a href="registrate.html">Registrate</a>
@@ -54,72 +58,73 @@
         </div>
       </div>
 
-<article class="main">
+
+<article class="main-base">
   <div class="registro-usuario">
 
     <form action="/my-handling-form-page" method="post">
 
       <li>
-        <label for="titulo" style="float: left;">Titulo:  </label>
-        <input type="text" id="titulo" name="titulo" style="width:70%;">
+        <label for="titulo" style="float: left; display: flex;">Titulo:  </label>
+        <input type="text" id="titulo" name="titulo" style="width:60%;">
       </li>
       <li>
-        <label for="anio" style="float: left;">Año de estreno:  </label>
-        <input type="text" id="anio" name="anio" style="width:70%;">
+        <label for="anio" style="float: left; display: flex;">Año de estreno:  </label>
+        <input type="text" id="anio" name="anio" style="width:60%;">
         
 
       </li>
       <li>
         <label for="pais" style="float: left;">País de origen:</label>
-        <input type="text" id="pais" name="pais" style="width:70%;">
+        <input type="text" id="pais" name="pais" style="width:60%;">
         
       </li>
       <li>
         <label for="directores" style="float: left;">Director(es):</label>
-        <input type="text" id="directores" name="directores" style="width:80%;">
+        <input type="text" id="directores" name="directores" style="width:60%;">
         
       </li>
       <li>
         <label for="img" style="float: left;">Poster:</label>
-        <input type="file" id="img" name="img" style="width:70%;">
+        <input type="file" id="img" name="img" style="width:60%;">
         
       </li>
       <label for="edad" style="float: left; padding: 0px 90% 0px .5% ; ">Genero:</label>
       <li>
         <label for="aventura" style="padding: 0px 0px 0px 3% ; ">Aventura</label>
-        <input type="checkbox" value="aventura">
+        <input type="checkbox" name="check_aventura" value="aventura">
         <label for="edad" style="padding: 0px 0px 0px 3% ; ">Terror</label>
-        <input type="checkbox" value="terror">
+        <input type="checkbox" name="check_terror" value="terror">
         <label for="edad" style="padding: 0px 0px 0px 3% ; ">Drama</label>
-        <input type="checkbox" value="drama">
+        <input type="checkbox" name="check_drama" value="drama">
         <label for="edad" style="padding: 0px 0px 0px 3% ; ">Thriller</label>
-        <input type="checkbox" value="thriller">
+        <input type="checkbox" name="check_thriller"value="thriller">
         <label for="familiares" style="padding: 0px 0px 0px 3% ; ">Familiares</label>
-        <input type="checkbox" value="familiares">
+        <input type="checkbox" name="check_familiares"value="familiares">
         <label for="accion" style="padding: 0px 0px 0px 3% ; ">Accion</label>
-        <input type="checkbox" value="accion">
-        <label for="drama" style="padding: 0px 0px 0px 3% ; ">Drama</label>
+        <input type="checkbox" name="check_accion" value="accion">
+        <label for="drama" name="check_drama" style="padding: 0px 0px 0px 3% ; ">Drama</label>
         <input type="checkbox" value="drama">
-        <label for="comedia" style="padding: 0px 0px 0px 3% ; ">Comedia</label>
+        <label for="comedia" name="check_comedia" style="padding: 0px 0px 0px 3% ; ">Comedia</label>
         <input type="checkbox" value="comedia">
       </li>
       <li>
         <label for="duracion" style="float: left;">Duración:</label>
-        <input type="number" id="duracion" name="duracion" style="width:70%;">
+        <input type="number" id="duracion" name="duracion" style="width:60%;">
       </li>
       <li>
         <label for="sinopsis" style="float: left;">Sinopsis:</label>
-        <textarea id="sinopsis" name="sinopsis" style="width:70%;"></textarea>
+        <textarea id="sinopsis" name="sinopsis" style="width:60%;"></textarea>
       </li>
       <li>
         
-        <label for=" thrialler" style="float: left;">Thrialler:</label>
-        <input type="text" id=" thrialler" name=" thrialler" style="width:70%;">
+        <label for="thrialler" style="float: left;">Thrialler:</label>
+        <input type="text" id=" thrialler" name=" thrialler" style="width:60%;">
 
       </li>
       <li>
         <label for="clasificacion" style="float: left;">Clasificación:</label>
-        <select name="clasificacion" id="clasificacion" style="width:50%;">
+        <select name="clasificacion" id="clasificacion" style="width:60%;">
           <option value="A">A</option>
           <option value="G">G</option>
           <option value="PG">PG</option>
@@ -129,7 +134,7 @@
         </select>
       </li>
     </form>
-    <div style="padding:5% 8px; ">
+    <div style=" padding:2.5% 8px; text-align: center;">
       <button type="submit" style=" font-weight: bold;padding:2% 4%; border: 0px; font-size: large; background-color: rgb(0, 0, 0); color: rgb(221, 232, 76);">Registrarse</button>
     </div>
     
@@ -146,12 +151,16 @@
 <style>
   label{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
+    margin: 0.6% 1% ;
     
   }
   li{
     list-style: none;
     margin: 0.5%;
+  }
+  input{
+    margin: 0.7% 1%;
   }
   .footer { 
     background-color: #1b3039;
