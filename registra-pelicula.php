@@ -94,7 +94,7 @@ while ($n <= $nRows)
     $n++;
   }
 
-    $archivo = fopen("peliculas1.json", "w+b");    // Abrir el archivo, creándolo si no existe
+    $archivo = fopen("static\peliculas1.json", "w+b");    // Abrir el archivo, creándolo si no existe
     if( $archivo == false ){
     	echo '<script>alert("Error al cerrar el archivo");
 		document.location="cartelera.html";
