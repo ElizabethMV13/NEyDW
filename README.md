@@ -9,6 +9,11 @@ https://github.com/ElizabethMV13/NEyDW/tree/Abigail#readme
 ```
 
 ## Uso
+En su navegador ingresa a:
+```bash
+http://localhost/Equipo5/
+```
+
 Usuario de la base de datos
 ```bash
 root
